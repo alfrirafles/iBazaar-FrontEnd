@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  
+@layer utilities{
+  .search-box {
+    @apply appearance-none w-full p-2 text-xs font-semibold leading-none bg-blue-50 rounded outline-none border m-4
+    }
+
+  .top-btn-nav {
+    @apply items-center justify-center h-10 w-10 text-xs text-white text-center font-semibold leading-none bg-blue-600 hover:bg-gray-700 rounded-full m-1
+    }
+  }
+
+/**
+* This is a valid CSS file. 
+**/
+
+
+
