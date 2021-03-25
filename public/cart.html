@@ -46,6 +46,35 @@
         </div>
     </div>
 
+    <!-- shopping cart details -->
+    <div class="flex flex-row w-full space-x-4 mx-6">
+        <div class="flex flex-col w-2/3">
+            <div class="flex flex-row justify-between items-baseline space-x-2
+            border-b border-gray-400 my-2 p-2">
+                <div class="flex flex-row space-x-3 items-baseline">
+                    <input type="checkbox" id="all" name="all" value="all">
+                    <label class="text-2xl font-bold" for="all">Select All</label>
+                </div>
+                <div>
+                    <button class="border border-gray-400 px-6 py-1 rounded">
+                        <img src="" alt="">
+                        Clear
+                    </button>
+                </div>
+            </div>
+            <div class="flex flex-row my-2 p-2">
+                <div class="flex items-baseline space-x-3">
+                    <input type="checkbox" id="store-name"
+                           name="store-name" value="@cart.product.store.name">
+                    <label class="font-bold" for="store-name">@cart.product.store.name</label>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col w-1/3">
+            <div class="bg-gray-400 w-40 h-40"></div>
+        </div>
+    </div>
+
     <!-- footer -->
     <section>
         <div class="skew skew-top mr-for-radius">
