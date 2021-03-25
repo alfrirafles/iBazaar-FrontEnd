@@ -177,6 +177,41 @@
         </div>
       </div>
 
+      <!-- add to cart, add to wishlist, purchase -->
+      <div class="flex flex-wrap -mb-4 md:mb-0 mx-6 mb-2 border-t border-b border-gray-500 py-2">
+        <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0">
+          <div class="flex flex-row items-baseline space-x-6">
+            <div class="bg-red-400 py-1 px-2 rounded">
+                <p class="text-sm">Discount <span class="text-sm font-bold">44%</span></p>
+            </div>
+            <p class="line-through text-1xl text-gray-500">RM 88</p>
+          </div>
+          <div class="w-full flex flex-row items-baseline space-x-3">
+            <h1 class="text-4xl font-bold">RM 38.72</h1>
+            <div class="flex flex-row">
+              <button class="text-3xl bg-gray-200 rounded-l px-2">
+                -
+              </button>
+              <input class="w-10 text-3xl px-2 border-t-2 border-b-2 border-gray-200 text-center"
+                     type="text" value="1" name="quantity">
+              <button class="text-3xl bg-gray-200 rounded-r px-2">
+                +
+              </button>
+            </div>
+            <p class="text-1xl text-gray-400">76 (items left)</p>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 px-4 mb-4 md:mb-0 flex flex-row align-baseline justify-end space-x-4">
+            <button class="py-1 px-2 my-6 border border-green-300 rounded text-green-400 font-bold">
+              <img src="" alt="">
+              Add to Cart
+            </button>
+            <button class="py-1 px-2 my-6 bg-green-400 border border-green-300 rounded text-white font-bold">
+              <img src="" alt="">
+              Purchase Product
+            </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
