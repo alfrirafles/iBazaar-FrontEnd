@@ -46,7 +46,49 @@
         </div>
     </div>
 
+    <!-- lhs and rhs partition -->
+    <div class="flex flex-row justify-around">
+        <!-- shipping details -->
+        <div class="flex flex-col p-6">
+            <div class="flex flex-row">
+                <p class="text-gray-500 text-lg font-semibold">Shipping</p>
+            </div>
+            <div class="flex flex-row space-x-3 pb-2 border-b border-gray-500">
+                <div class="flex flex-col">
+                    <div class="bg-gray-400 w-12 h-12"></div>
+                </div>
+                <div class="flex flex-col space-y-1">
+                    <p class="text-base">Shipping to:</p>
+                    <div class="flex flex-row items-baseline space-x-2">
+                        <p class="font-bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Quisque augue libero, condimentum ac erat vel, pellentesque congue nulla.
+                            Nulla ornare interdum commodo. Cras sit amet finibus mauris, vitae lobortis neque.
+                            Phasellus at dignissim massa. Vestibulum at diam at sem commodo eleifend eu et eros.
+                            <button class="bg-green-400 text-sm text-white px-2 py-1 mx-4 rounded-full">
+                                Change
+                            </button>
+                        </p>
 
+                    </div>
+                    <label for="shiping-method">Shipping Method</label>
+                    <select name="courier" id="shiping-method" class="w-3/5 border border-gray-300 rounded"></select>
+                    <div class="flex flex-col">
+                        <small class="text-sm text-gray-500">
+                            Shipping costs starts at <span class="font-bold">RM 5.00</span>
+                        </small>
+                        <small class="text-sm text-gray-500">
+                            With estimated arrival on <span class="font-bold">March 24 - 27, 2021</span>
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- shipping payment information -->
+        <div class="flex flex-col">
+            <div class="w-48 h-48 bg-gray-400"></div>
+        </div>
+    </div>
 
     <!-- footer -->
     <section>
