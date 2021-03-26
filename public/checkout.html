@@ -50,6 +50,7 @@
     <div class="flex flex-row justify-around p-6 space-x-6">
         <!-- shipping details -->
         <div class="flex flex-col w-2/3">
+            <!-- shipping address -->
             <div class="flex flex-row">
                 <p class="text-gray-500 text-lg font-semibold">Shipping</p>
             </div>
@@ -65,7 +66,7 @@
                             Quisque augue libero, condimentum ac erat vel, pellentesque congue nulla.
                             Nulla ornare interdum commodo. Cras sit amet finibus mauris, vitae lobortis neque.
                             Phasellus at dignissim massa. Vestibulum at diam at sem commodo eleifend eu et eros.
-                            <button class="bg-green-400 text-sm text-white px-2 py-1 mx-4 rounded-full">
+                            <button class="bg-green-400 text-sm text-white font-bold px-2 py-1 mx-4 rounded-full">
                                 Change
                             </button>
                         </p>
@@ -83,12 +84,34 @@
                     </div>
                 </div>
             </div>
+            <!-- shipping payment title -->
+            <div class="flex flex-row">
+                <p class="text-gray-500 text-lg font-semibold">Payment Method</p>
+            </div>
+            <!-- shipping payment details -->
+            <div class="flex flex-row space-x-3 pb-2 border-b border-gray-500">
+                <div class="flex flex-col">
+                    <div class="bg-gray-400 w-12 h-12"></div>
+                </div>
+                <div class="flex flex-col space-y-1">
+                    <p class="font-">Bank/Partner</p>
+                    <select id="payment-method" name="payment-method"
+                            class="border border-gray-300 rounded"></select>
+                    <label for="payment-method">
+                        Administration fees of <span class="font-bold">RM 0.75</span> will be applied
+                    </label>
+                    <button class="border border-gray-300 rounded w-1/3 hover:bg-green-400 hover:text-white">
+                        Select
+                    </button>
+                </div>
+            </div>
         </div>
         <!-- shipping payment information -->
         <div class="flex flex-col w-1/3">
             <div class="w-full h-full bg-gray-400"></div>
         </div>
     </div>
+
 
     <!-- footer -->
     <section>
