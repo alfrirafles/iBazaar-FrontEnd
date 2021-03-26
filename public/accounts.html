@@ -48,12 +48,9 @@
 
     <!-- accounts content -->
     <div>
-        <div class="flex flex-row space-x-3 p-6">
+        <div class="flex flex-row space-x-3 p-6 mb-4">
             <!-- lhs -->
-            <div class="flex flex-col w-1/3 p-2 border rounded space-y-2">
-                <!-- split like this just in case use list comprehension
-                     generation in live view
-                 -->
+            <div class="flex flex-col w-1/6 h-full p-2 border rounded space-y-2">
                 <div class="flex flex-row justify-between">
                     <p class="font-bold">Biodata</p>
                     <p>></p>
@@ -81,11 +78,97 @@
                 </div>
             </div>
             <!-- rhs -->
-            <div class="flex-flex-col w-2/3 h-48">
-                <div class="bg-gray-400 w-full"></div>
+            <div class="flex-flex-col w-5/6">
+                <div class="flex flex-row border-b-2 border-gray-400">
+                    <p class="font-bold text-2xl">Biodata</p>
+                </div>
+                <div class="flex flex-row">
+                    <div class="flex flex-col w-2/3 space-y-4">
+                        <!-- section title -->
+                        <p class="font-bold text-gray-400">Profile Information</p>
+                        <!-- username info -->
+                        <div class="flex flex-row">
+                            <div class="w-1/3">Username</div>
+                            <div class="w-2/3">janedoe</div>
+                        </div>
+                        <!-- name input -->
+                        <div class="flex flex-row items-baseline">
+                            <div class="w-1/3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="w-2/3">
+                                <input class="border border-gray-400 rounded px-2 py-2"
+                                       type="text" name="name" id="name"
+                                       value="Jane Doe">
+                            </div>
+                        </div>
+                        <!-- gender input -->
+                        <div class="flex flex-row items-baseline">
+                            <div class="w-1/3">
+                                <p>Gender</p>
+                            </div>
+                            <div class="flex flex-row w-2/3 items-baseline space-x-2">
+                                <input type="radio" name="male" id="gender-m">
+                                <label for="gender-m">Male</label>
+                                <input type="radio" name="female" id="gender-f">
+                                <label for="gender-f">Female</label>
+                            </div>
+                        </div>
+                        <!-- birthdate input -->
+                        <div class="flex flex-row items-baseline">
+                            <div class="w-1/3">
+                                Birth Date
+                            </div>
+                            <div class="w-2/3 flex flex-row items baseline space-x-4">
+                                <select class="w-1/6 border border-gray-500 rounded"></select>
+                                <select class="w-4/6 border border-gray-500 rounded"></select>
+                                <select class="w-1/6 border border-gray-500 rounded"></select>
+                            </div>
+                        </div>
+                        <!-- contact section title -->
+                        <p class="text-gray-400 font-bold">Contact Informations</p>
+                        <!-- email information -->
+                        <div class="flex flex-row items-baseline">
+                            <div class="w-1/3">
+                                <p>Email</p>
+                            </div>
+                            <div class="w-2/3">
+                                <p>
+                                    *********@*****.***
+                                    <button class="bg-gray-300 rounded-full py-1 px-1 text-sm">
+                                        Change
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                        <!-- phone information -->
+                        <div class="flex flex-row items-baseline">
+                            <div class="w-1/3">
+                                <p>Phone Number</p>
+                            </div>
+                            <div class="w-2/3">
+                                <p>
+                                    08**********4**6
+                                    <button class="bg-gray-300 rounded-full py-1 px-1 text-sm">
+                                        Change
+                                    </button>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-1/3 items-center space-y-4 mt-4">
+                        <div class="rounded-full w-24 h-24 bg-gray-400"></div>
+                        <button class="border border-gray-400 py-2 px-4 rounded">
+                            Upload Profile Picture
+                        </button>
+                        <div class="text-sm">
+                            <p>Maximum file size: 1 MB</p>
+                            <p>File picture format: .JPEG, .PNG</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
     <!-- footer -->
     <section>
