@@ -47,7 +47,7 @@
     </div>
 
     <!-- store information section -->
-    <div class="flex flex-row justify-around p-6 my-4">
+    <div class="flex flex-row justify-around p-2 my-4">
         <!-- main store information -->
         <div class="flex flex-row space-x-4">
             <!-- store display picture -->
@@ -113,6 +113,26 @@
                 <p class="text-gray-400">(34k reviews)</p>
             </div>
         </div>
+    </div>
+
+    <!-- store page listing switch -->
+    <div class="flex flex-row border-b-2 border-gray-400 mx-6 p-2 space-x-6">
+        <h1 class="font-bold text-green-400 box-border">Products <span class="font-normal">(334)</span></h1>
+        <h1 class="font-bold">Reviews <span class="font-normal">(334)</span></h1>
+    </div>
+
+    <!-- filter rows -->
+    <div class="flex flex-row mx-6 my-4 items-baseline">
+        <label for="search-box" class="font-bold w-1/12">Filter</label>
+        <div class="flex flex-row w-2/4 h-8">
+            <input id="search-box" type="text" name="product"
+                   class="bg-gray-300 rounded-l w-3/4">
+            <div class="bg-gray-400 w-8 h-8 rounded-r"></div>
+        </div>
+        <div class="flex flex-row w-2/4 justify-end">
+            <select class="border border-gray-400 rounded w-1/5 h-8 self-end"></select>
+        </div>
+
     </div>
 
     <!-- footer -->
