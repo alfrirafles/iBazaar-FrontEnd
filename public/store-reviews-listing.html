@@ -126,6 +126,201 @@
         </div>
     </div>
 
+    <!-- reviews listing -->
+    <div class="flex flex-col mx-6 mb-4">
+        <div class="flex flex-wrap -mb-4 md:mb-0 mb-2 p-2">
+            <div class="w-full md:w-1/4 px-4 mb-4 md:mb-0">
+                <div class="h-2/6 flex flex-col space-y-6 border border-gray-400 rounded p-3">
+                    <h1 class="text-2xl font-bold">Reviews (<span>102</span>)</h1>
+                    <h2 class="font-bold">Filter</h2>
+                    <div class="flex flex-wrap w-full">
+                        <div>
+                            <input id="all" type="checkbox" name="all" value="all">
+                            <label for="all">All</label>
+                        </div>
+                        <div class="mx-2">
+                            <input id="with-pictures" type="checkbox" name="pictures" value="pictures">
+                            <label for="with-pictures">With pictures</label>
+                        </div>
+                        <div>
+                            <input id="star-count" type="checkbox" name="start-count" value="2" checked>
+                            <label for="star-count">Stars count (2)</label>
+                        </div>
+                    </div>
+                    <div class="flex flex-row align-baseline justify-around">
+                        <p>1</p>
+                        <input type="range" min="1" max="5" name="ratings" value="2">
+                        <p>5</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-3/4 px-4 mb-4 md:mb-0 space-y-2">
+                <div class="flex flex-row border-b border-gray-400">
+                    <div class="bg-gray-400 w-16 h-16 rounded-full"></div>
+                    <div class="flex flex-col p-2">
+                        <h3 class="font-bold">@customer.name</h3>
+                        <div class="flex flex-row space-x-4 items-baseline">
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p>5</p>
+                            </div>
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p class="text-gray-400">1 Week ago</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row">
+                            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                        </div>
+                        <div class="flex flex-col bg-gray-300 p-4 rounded space-y-4 my-2">
+                            <p class="font-bold">Store Replies</p>
+                            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="border border-gray-400 px-2 py-1 rounded">
+                                <img src="" alt="">
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row border-b border-gray-400">
+                    <div class="bg-gray-400 w-16 h-16 rounded-full"></div>
+                    <div class="flex flex-col p-2">
+                        <h3 class="font-bold">@customer.name</h3>
+                        <div class="flex flex-row space-x-4 items-baseline">
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p>5</p>
+                            </div>
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p class="text-gray-400">1 Week ago</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row">
+                            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="border border-gray-400 px-2 py-1 rounded">
+                                <img src="" alt="">
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row border-b border-gray-400">
+                    <div class="bg-gray-400 w-16 h-16 rounded-full"></div>
+                    <div class="flex flex-col p-2">
+                        <h3 class="font-bold">@customer.name</h3>
+                        <div class="flex flex-row space-x-4 items-baseline">
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p>5</p>
+                            </div>
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p class="text-gray-400">1 Week ago</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row">
+                            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                        </div>
+                        <div class="flex justify-start">
+                            <div class="bg-gray-400 w-48 h-48 rounded my-2"></div>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="border border-gray-400 px-2 py-1 rounded">
+                                <img src="" alt="">
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row border-b border-gray-400">
+                    <div class="bg-gray-400 w-16 h-16 rounded-full"></div>
+                    <div class="flex flex-col p-2">
+                        <h3 class="font-bold">@customer.name</h3>
+                        <div class="flex flex-row space-x-4 items-baseline">
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p>5</p>
+                            </div>
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p class="text-gray-400">1 Week ago</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row">
+                            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="border border-gray-400 px-2 py-1 rounded">
+                                <img src="" alt="">
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row border-b border-gray-400">
+                    <div class="bg-gray-400 w-16 h-16 rounded-full"></div>
+                    <div class="flex flex-col p-2">
+                        <h3 class="font-bold">@customer.name</h3>
+                        <div class="flex flex-row space-x-4 items-baseline">
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p>5</p>
+                            </div>
+                            <div class="flex flex-row space-x-2">
+                                <div class="bg-gray-400 w-4 h-4"></div>
+                                <p class="text-gray-400">1 Week ago</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-row">
+                            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
+                        </div>
+                        <div class="flex justify-end">
+                            <button class="border border-gray-400 px-2 py-1 rounded">
+                                <img src="" alt="">
+                                Like
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-row justify-center">
+            <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    <span class="sr-only">Previous</span>
+                    <!-- Heroicon name: solid/chevron-left -->
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+                <a href="#" class="relative inline-flex items-center px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                    1
+                </a>
+                <a href="#" class="relative inline-flex items-center px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                    2
+                </a>
+                <a href="#" class="hidden md:inline-flex relative items-center px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                    3
+                </a>
+                <a href="#" class="hidden md:inline-flex relative items-center px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">
+                    4
+                </a>
+                <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                    <span class="sr-only">Next</span>
+                    <!-- Heroicon name: solid/chevron-right -->
+                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                        <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+                    </svg>
+                </a>
+            </nav>
+        </div>
+    </div>
+
     <!-- footer -->
     <section>
         <div class="skew skew-top mr-for-radius">
