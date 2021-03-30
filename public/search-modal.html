@@ -39,14 +39,15 @@
             <img class="rounded w-16 h-16 self-center" src="images/IbadahMain01.png" alt="">
         </div>
         <!-- search field -->
-        <form action="#" method="post" class="w-full md:w-4/6 md:mb-0 flex flex-row justify-center items-center relative">
+        <form action="#" method="post"
+              class="w-full md:w-4/6 md:mb-0 flex flex-row justify-center items-center relative">
             <input class="appearance-none w-11/12 p-4 text-xs font-semibold leading-none bg-gray-200 rounded-l outline-none justify-self-center"
                    type="text" name="search" placeholder="Search.." id="">
             <button class="bg-gray-400 w-12 h-12 rounded-r justify-self-center">
                 <img src="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch" alt="">
             </button>
             <!-- modal element -->
-            <div class="bg-white border rounded shadow-lg w-full z-10 absolute mt-64 p-4 space-y-2">
+            <div class="bg-white border rounded shadow-lg w-full z-10 absolute mt-96 p-4 space-y-2">
                 <!-- title-1 -->
                 <p class="font-bold text-2xl">Filter</p>
                 <!-- checkboxes -->
@@ -73,9 +74,7 @@
                     </div>
                 </div>
                 <!-- title-2 -->
-                <div class="flex-row">
-                    <h1 class="font-bold text-2xl">Recent Searches</h1>
-                </div>
+                <h1 class="font-bold text-2xl">Recent Searches</h1>
                 <!-- recent searches list -->
                 <div class="flex flex-wrap">
                     <div class="flex flex-row border border-gray-400 items-center rounded mx-1 my-1">
@@ -103,6 +102,14 @@
                         <p class="rounded-r px-4">@product.name</p>
                     </div>
                 </div>
+                <!-- category selection -->
+                <h1 class="font-bold text-2xl">Category Selection</h1>
+                <div class="flex flex-wrap">
+                    <p class="text-lg border border-gray-400 rounded-full px-6 py-1 mx-1 my-1">@category.name</p>
+                    <p class="text-lg border border-gray-400 rounded-full px-6 py-1 mx-1 my-1">@category.name</p>
+                    <p class="text-lg border border-gray-400 rounded-full px-6 py-1 mx-1 my-1">@category.name</p>
+                    <p class="text-lg border border-gray-400 rounded-full px-6 py-1 mx-1 my-1">@category.name</p>
+                </div>
             </div>
         </form>
         <!-- side buttons -->
@@ -122,19 +129,27 @@
     <!-- footer -->
     <section>
         <div class="skew skew-top mr-for-radius">
-            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none"><polygon fill="currentColor" points="0 0 10 10 0 10"></polygon></svg></div>
+            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0 0 10 10 0 10"></polygon>
+            </svg>
+        </div>
         <div class="skew skew-top ml-for-radius">
-            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none"><polygon fill="currentColor" points="0 10 10 0 10 10"></polygon></svg></div>
+            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0 10 10 0 10 10"></polygon>
+            </svg>
+        </div>
         <div class="py-20 bg-gray-50 radius-for-skewed">
             <div class="container mx-auto px-4">
                 <div class="flex flex-wrap mb-6 lg:mb-20">
                     <div class="mb-6 w-full lg:w-1/5">
                         <a class="text-3xl font-bold leading-none" href="#">
-                            <img src="https://static.shuffle.dev/uploads/files/c3/c35db9b667350faef359bc59c4de5b9a9c631bc7/IbadahMain01.png" alt="" width="148">
+                            <img src="https://static.shuffle.dev/uploads/files/c3/c35db9b667350faef359bc59c4de5b9a9c631bc7/IbadahMain01.png"
+                                 alt="" width="148">
                         </a>
                     </div>
                     <div class="mb-5 w-full lg:w-1/5">
-                        <p class="text-gray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo.</p>
+                        <p class="text-gray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed luctus eget justo.</p>
                     </div>
                     <div class="w-full lg:w-3/5 flex flex-wrap -mx-3 justify-end">
                         <div class="mb-6 w-full md:w-1/2 lg:w-1/4 lg:mr-6 px-3">
@@ -149,14 +164,23 @@
                 </div>
                 <div class="w-full flex justify-between">
                     <p class="text-sm text-gray-400">© 2021. All rights reserved.</p>
-                    <div class="flex space-x-2 lg:space-x-4"><a href="#"><img src="atis-assets/social/facebook.svg" alt=""></a><a href="#"><img src="atis-assets/social/twitter.svg" alt=""></a><a href="#"><img src="atis-assets/social/instagram.svg" alt=""></a></div>
+                    <div class="flex space-x-2 lg:space-x-4"><a href="#"><img src="atis-assets/social/facebook.svg"
+                                                                              alt=""></a><a href="#"><img
+                            src="atis-assets/social/twitter.svg" alt=""></a><a href="#"><img
+                            src="atis-assets/social/instagram.svg" alt=""></a></div>
                 </div>
             </div>
         </div>
         <div class="skew skew-bottom mr-for-radius">
-            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none"><polygon fill="currentColor" points="0 0 10 0 0 10"></polygon></svg></div>
+            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0 0 10 0 0 10"></polygon>
+            </svg>
+        </div>
         <div class="skew skew-bottom ml-for-radius">
-            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none"><polygon fill="currentColor" points="0 0 10 0 10 10"></polygon></svg></div>
+            <svg class="h-8 md:h-12 lg:h-20 w-full text-gray-50" viewBox="0 0 10 10" preserveAspectRatio="none">
+                <polygon fill="currentColor" points="0 0 10 0 10 10"></polygon>
+            </svg>
+        </div>
     </section>
 </div>
 </body>
