@@ -46,7 +46,7 @@
                 <img src="https://fonts.google.com/icons?selected=Material%20Icons%20Outlined%3Asearch" alt="">
             </button>
             <!-- modal element -->
-            <div class="bg-white border rounded shadow-lg w-full h-48 z-10 absolute mt-64 p-4">
+            <div class="bg-white border rounded shadow-lg w-full z-10 absolute mt-64 p-4 space-y-2">
                 <p class="font-bold text-2xl">Filter</p>
                 <div class="flex flex-row items-center space-x-3">
                     <input type="checkbox" name="most-popular">
@@ -60,8 +60,17 @@
                 </div>
                 <div class="flex flex-row items-center space-x-3">
                     <div class="flex flex-col">
-
+                        <p>Min. Price</p>
+                        <input type="text" name="min-price" class="border border-gray-500 rounded">
                     </div>
+                    <div class="bg-gray-400 w-6 h-6 mt-6"></div>
+                    <div class="flex flex-col">
+                        <p>Max. Price</p>
+                        <input type="text" name="max-price" class="border border-gray-500 rounded">
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <h1 class="font-bold text-2xl">Recent Searches</h1>
                 </div>
             </div>
         </form>
