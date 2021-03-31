@@ -52,14 +52,55 @@
             </div>
         </div>
         <!-- middle side navigation -->
-        <div class="flex flex-col w-2/4 p-4 bg-gray-100">
-            <div class="flex flex-row justify-between">
+        <div class="flex flex-col w-2/4 p-4 bg-gray-100 space-y-4">
+            <div class="flex flex-row justify-between z-10">
                 <p class="text-2xl font-bold">Dashboard</p>
                 <input type="text" name="search" class="border rounded">
             </div>
+            <div class="flex flex-row bg-white rounded p-4 justify-between relative">
+                <div class="flex flex-col">
+                    <h1 class="text-2xl font-bold">Hallo, @store.name</h1>
+                    <p>Welcome to the dashboard</p>
+                </div>
+                <!-- ! -->
+<!--                <div class="bg-gray-400 w-32 h-32 rounded-full absolute right-0 bottom-0 mb-4 object-cover z-0"></div>-->
+            </div>
+            <!-- overview title -->
+            <p class="text-lg font-bold">Overview</p>
+            <!-- overview content -->
+            <div class="flex md:flex-row md:flex-wrap space-x-3">
+                <div class="flex flex-row p-2 space-x-2 bg-white rounded md:my-1">
+                    <div class="bg-gray-400 h-10 w-10 rounded-full"></div>
+                    <div class="flex flex-col">
+                        <p class="font-bold">100</p>
+                        <small>Title overview</small>
+                    </div>
+                </div>
+                <div class="flex flex-row p-2 space-x-2 bg-white rounded md:my-1">
+                    <div class="bg-gray-400 h-10 w-10 rounded-full"></div>
+                    <div class="flex flex-col">
+                        <p class="font-bold">100</p>
+                        <small>Title overview</small>
+                    </div>
+                </div>
+                <div class="flex flex-row p-2 space-x-2 bg-white rounded md:my-1">
+                    <div class="bg-gray-400 h-10 w-10 rounded-full"></div>
+                    <div class="flex flex-col">
+                        <p class="font-bold">100</p>
+                        <small>Title overview</small>
+                    </div>
+                </div>
+                <div class="flex flex-row p-2 space-x-2 bg-white rounded md:my-1">
+                    <div class="bg-gray-400 h-10 w-10 rounded-full"></div>
+                    <div class="flex flex-col">
+                        <p class="font-bold">100</p>
+                        <small>Title overview</small>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- right side navigation -->
-        <div class="flex flex-col w-1/4 p-4">
+        <div class="flex flex-col w-1/4 p-4 space-y-4">
             <div class="flex flex-row justify-between items-center">
                 <div class="flex flex-row items-center space-x-2">
                     <div class="bg-gray-400 rounded-full h-6 p-6"></div>
@@ -67,6 +108,36 @@
                 </div>
                 <div class="bg-gray-400 rounded h-6 w-6"></div>
             </div>
+            <!-- mode switch -->
+            <div class="flex flex-row">
+                <button class="w-1/2 bg-green-400 text-white rounded-l p-3">Notifications (23)</button>
+                <button class="w-1/2 bg-green-200 text-white rounded-r p-3">Chats (23)</button>
+            </div>
+            <!-- order notification section title -->
+            <div class="flex flex-row items-baseline space-x-4">
+                <p class="font-bold">Orders</p>
+                <small class="text-green-300">See all</small>
+            </div>
+            <!-- order notification list -->
+            <div class="flex flex-row justify-around space-x-2 pb-2 border-b border-gray-300">
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
