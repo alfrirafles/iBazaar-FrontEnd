@@ -55,14 +55,103 @@
         </div>
         <!-- middle side navigation -->
         <div class="flex flex-col w-2/4 p-4 bg-gray-100 space-y-4">
-            <div class="flex flex-row justify-between z-10">
+            <div class="flex flex-row justify-between">
                 <p class="text-2xl font-bold">Live Show (Bidding)</p>
                 <input type="text" name="search" class="border rounded">
             </div>
-            <h2 class="text-gray-400 font-bold">Available Timeslots</h2>
+            <div class="flex flex-row justify-between">
+                <h2 class="text-gray-400 font-bold">Available Timeslots</h2>
+                <div class="flex flex-row space-x-2">
+                    <label class="w-1/3 text-gray-400">Month</label>
+                    <select class="rounded bg-white w-32"></select>
+                    <p>2021</p>
+                </div>
+            </div>
             <!-- live schedule -->
-            <div class="flex flex-col bg-white rounded p-2">
-
+            <div class="flex flex-col bg-white rounded p-4">
+                <!-- day selector -->
+                <div class="flex flex-row items-center justify-around">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <!-- monday -->
+                    <div class="flex flex-col items-center p-4">
+                        <button class="bg-gray-300 rounded-full h-10 w-10 flex justify-center">
+                            <span class="font-bold self-center">1</span>
+                        </button>
+                        <p>Monday</p>
+                    </div>
+                    <!-- tuesday -->
+                    <div class="flex flex-col items-center p-4">
+                        <button class="bg-gray-300 rounded-full h-10 w-10 flex justify-center">
+                            <span class="font-bold self-center">1</span>
+                        </button>
+                        <p>Tuesday</p>
+                    </div>
+                    <!-- wednesday -->
+                    <div class="flex flex-col items-center p-4">
+                        <button class="bg-gray-300 rounded-full h-10 w-10 flex justify-center">
+                            <span class="font-bold self-center">1</span>
+                        </button>
+                        <p>Wednesday</p>
+                    </div>
+                    <!-- thursday -->
+                    <div class="flex flex-col items-center p-4">
+                        <button class="bg-gray-300 rounded-full h-10 w-10 flex justify-center">
+                            <span class="font-bold self-center">1</span>
+                        </button>
+                        <p>Thursday</p>
+                    </div>
+                    <!-- friday -->
+                    <div class="flex flex-col items-center p-4">
+                        <button class="bg-gray-300 rounded-full h-10 w-10 flex justify-center">
+                            <span class="font-bold self-center">1</span>
+                        </button>
+                        <p>Friday</p>
+                    </div>
+                    <!-- saturday -->
+                    <div class="flex flex-col items-center p-4">
+                        <button class="bg-gray-300 rounded-full h-10 w-10 flex justify-center">
+                            <span class="font-bold self-center">1</span>
+                        </button>
+                        <p>Saturday</p>
+                    </div>
+                    <!-- sunday -->
+                    <div class="flex flex-col items-center p-4">
+                        <button class="bg-gray-300 rounded-full h-10 w-10 flex justify-center">
+                            <span class="font-bold self-center">1</span>
+                        </button>
+                        <p>Sunday</p>
+                    </div>
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                </div>
+                <!-- timeslot options -->
+                <div class="flex flex-col">
+                    <div class="flex flex-row items-center space-x-2">
+                        <p>07:00</p>
+                        <hr class="border border-gray-300 w-full">
+                    </div>
+                    <div class="flex flex-row items-center space-x-3 pl-14">
+                        <button class="bg-green-400 text-white rounded-full px-2">07:10 - 07:20</button>
+                        <button class="bg-green-400 text-white rounded-full px-2">07:30 - 08:00</button>
+                    </div>
+                    <div class="flex flex-row items-center space-x-2">
+                        <p>08:00</p>
+                        <hr class="border border-gray-300 w-full">
+                    </div>
+                    <div class="flex flex-row items-center space-x-3 pl-14">
+                        <button class="bg-green-400 text-white rounded-full px-2">08:00 - 09:00</button>
+                    </div>
+                    <div class="flex flex-row items-center space-x-2">
+                        <p>09:00</p>
+                        <hr class="border border-gray-300 w-full">
+                    </div>
+                    <div class="flex flex-row items-center space-x-3 pl-14">
+                        <button class="bg-green-400 text-white rounded-full px-2">09:00 - 10:00</button>
+                    </div>
+                    <div class="flex flex-row items-center space-x-2">
+                        <p>10:00</p>
+                        <hr class="border border-gray-300 w-full">
+                    </div>
+                </div>
             </div>
         </div>
         <!-- right side navigation -->
