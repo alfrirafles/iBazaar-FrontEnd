@@ -101,6 +101,36 @@
                     </div>
                 </div>
             </div>
+            <!-- main product information -->
+            <div class="flex flex-col bg-white rounded p-4 space-y-2">
+                <!-- category -->
+                <div class="flex flex-row">
+                    <label for="category" class="font-bold text-gray-500 w-1/5">Category <span class="text-red-400">*</span></label>
+                    <input id="category" name="category" type="text" class="border border-gray-400 rounded w-2/5 px-1">
+                </div>
+                <!-- product name -->
+                <div class="flex flex-row">
+                    <div class="flex flex-col w-1/5">
+                        <label for="name" class="font-bold text-gray-500">Product Name <span class="text-red-400">*</span></label>
+                        <small class="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Donec
+                            odio.</small>
+                    </div>
+                    <div class="flex flex-col w-4/5">
+                        <input id="name" type="text" name="product-name" class="border border-gray-400 rounded">
+                        <small class="self-end">0/100</small>
+                    </div>
+                </div>
+                <!-- product description -->
+                <div class="flex flex-row">
+                    <label for="description" class="font-bold text-gray-500 w-1/5">Description</label>
+                    <div class="flex flex-col w-4/5">
+                        <textarea id="description" name="description" class="border border-gray-400 rounded p-1"></textarea>
+                        <small class="self-end">0/2000</small>
+                    </div>
+
+                </div>
+            </div>
 
         </div>
         <!-- right side navigation -->
