@@ -105,13 +105,15 @@
             <div class="flex flex-col bg-white rounded p-4 space-y-2">
                 <!-- category -->
                 <div class="flex flex-row">
-                    <label for="category" class="font-bold text-gray-500 w-1/5">Category <span class="text-red-400">*</span></label>
+                    <label for="category" class="font-bold text-gray-500 w-1/5">Category <span
+                            class="text-red-400">*</span></label>
                     <input id="category" name="category" type="text" class="border border-gray-400 rounded w-2/5 px-1">
                 </div>
                 <!-- product name -->
                 <div class="flex flex-row">
                     <div class="flex flex-col w-1/5">
-                        <label for="name" class="font-bold text-gray-500">Product Name <span class="text-red-400">*</span></label>
+                        <label for="name" class="font-bold text-gray-500">Product Name <span
+                                class="text-red-400">*</span></label>
                         <small class="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                             Donec
                             odio.</small>
@@ -125,7 +127,8 @@
                 <div class="flex flex-row">
                     <label for="description" class="font-bold text-gray-500 w-1/5">Description</label>
                     <div class="flex flex-col w-4/5">
-                        <textarea id="description" name="description" class="border border-gray-400 rounded p-1"></textarea>
+                        <textarea id="description" name="description"
+                                  class="border border-gray-400 rounded p-1"></textarea>
                         <small class="self-end">0/2000</small>
                     </div>
 
@@ -135,7 +138,8 @@
             <div class="flex flex-col bg-white rounded p-4 space-y-2">
                 <!-- price per unit -->
                 <div class="flex flex-row items-center">
-                    <label for="price-per-unit" class="font-bold text-gray-500 w-1/5">Price per unit <span class="text-red-400">*</span></label>
+                    <label for="price-per-unit" class="font-bold text-gray-500 w-1/5">Price per unit <span
+                            class="text-red-400">*</span></label>
                     <input id="price-per-unit" type="text" name="price-per-unit" class="border border-gray-400 rounded">
                 </div>
                 <!-- minimum order -->
@@ -149,7 +153,45 @@
                     <input id="discount" type="text" name="discount" class="border border-gray-400 rounded">
                 </div>
             </div>
-
+            <!-- product details -->
+            <div class="flex flex-col bg-white rounded p-4 space-y-2">
+                <div class="flex flex-row">
+                    <div class="flex flex-col w-1/5">
+                        <label for="product-status" class="text-gray-500 font-bold">Product Status</label>
+                        <small class="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+                            odio.</small>
+                    </div>
+                    <!-- toggle button -->
+                    <div class="relative">
+                        <!-- input -->
+                        <input id="product-status" type="checkbox" class="hidden" />
+                        <!-- line -->
+                        <div
+                                class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
+                        ></div>
+                        <!-- dot -->
+                        <div
+                                class="-top-0 -left-1 transition-all duration-300 ease-in-out absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
+                        ></div>
+                    </div>
+                </div>
+                <div class="flex flex-row">
+                    <label for="quantity" class="font-bold text-gray-500 w-1/5">Stock Quantity<span
+                            class="text-red-400">*</span></label>
+                    <input id="quantity" type="text" name="price-per-unit" class="border border-gray-400 rounded">
+                </div>
+                <div class="flex flex-row">
+                    <label for="weight" class="font-bold text-gray-500 w-1/5">Weight<span
+                            class="text-red-400">*</span></label>
+                    <div class="flex flex-row relative">
+                        <input id="weight" type="text" name="price-per-unit" class="border border-gray-400 rounded">
+                        <div class="border border-gray-400 rounded w-12 h-full absolute right-0"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row justify-center">
+                <button class="bg-green-400 rounded text-white font-bold px-10 py-2">Add Product</button>
+            </div>
         </div>
         <!-- right side navigation -->
         <div class="flex flex-col w-1/4 p-4 space-y-4">
