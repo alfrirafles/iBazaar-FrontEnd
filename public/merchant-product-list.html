@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="">
+    <div class="flex flex-row space-x-1">
+        <!-- left side navigation -->
+        <div class="flex flex-col w-1/4 p-4">
+            <!-- brand -->
+            <div class="flex flex-row space-x-2">
+                <img src="images/IbadahMain01.png" alt="" class="w-12 h-12">
+                <div class="flex flex-col">
+                    <p>iBazaar</p>
+                    <small class="text-green-400">Merchant</small>
+                </div>
+            </div>
+            <!-- menu list -->
+            <div class="flex flex-col pt-5">
+                <div class="flex flex-row p-3 rounded space-x-3 group hover:bg-green-200">
+                    <div class="bg-gray-400 group-hover:bg-white w-6 h-6 rounded-full"></div>
+                    <p>Dashboard</p>
+                </div>
+            </div>
+            <div class="flex flex-col py-1">
+                <div class="flex flex-row p-3 rounded space-x-3 bg-green-200 group hover:bg-green-200">
+                    <div class="bg-white group-hover:bg-white w-6 h-6 rounded-full"></div>
+                    <p>Products</p>
+                </div>
+                <a href="" class="px-12 py-2 hover:text-green-400">Product List</a>
+                <a href="" class="px-12 py-2 font-bold hover:text-green-400">Add Product</a>
+            </div>
+            <div class="flex flex-col py-1">
+                <div class="flex flex-row p-3 rounded space-x-3 group hover:bg-green-200">
+                    <div class="bg-gray-400 group-hover:bg-white w-6 h-6 rounded-full"></div>
+                    <p>Live Stream</p>
+                </div>
+            </div>
+            <div class="flex flex-col py-1">
+                <div class="flex flex-row p-3 rounded space-x-3 group hover:bg-green-200">
+                    <div class="bg-gray-400 group-hover:bg-white w-6 h-6 rounded-full"></div>
+                    <p>Sales</p>
+                </div>
+            </div>
+        </div>
+        <!-- middle side navigation -->
+        <div class="flex flex-col w-2/4 p-4 bg-gray-100 space-y-4">
+
+        </div>
+        <!-- right side navigation -->
+        <div class="flex flex-col w-1/4 p-4 space-y-4">
+            <div class="flex flex-row justify-between items-center">
+                <div class="flex flex-row items-center space-x-2">
+                    <div class="bg-gray-400 rounded-full h-6 p-6"></div>
+                    <p>@store.name</p>
+                </div>
+                <div class="bg-gray-400 rounded h-6 w-6"></div>
+            </div>
+            <!-- mode switch -->
+            <div class="flex flex-row">
+                <button class="w-1/2 bg-green-400 text-white rounded-l p-3">Notifications (23)</button>
+                <button class="w-1/2 bg-green-200 text-white rounded-r p-3">Chats (23)</button>
+            </div>
+            <!-- order notification section title -->
+            <div class="flex flex-row items-baseline space-x-4">
+                <p class="font-bold">Orders</p>
+                <a href="#" class="text-green-300 text-sm">See all</a>
+            </div>
+            <!-- order notification list -->
+            <div class="flex flex-row justify-around space-x-2 pb-2 border-b border-gray-300">
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+            </div>
+            <!-- order details -->
+            <div class="flex flex-col pb-4 border-b border-gray-400 space-y-4">
+                <!-- product -->
+                <div class="flex flex-row items-center space-x-2">
+                    <div class="bg-gray-400 w-20 h-20"></div>
+                    <div class="flex flex-col">
+                        <p>@product.name</p>
+                        <div class="flex flex-row items-center space-x-2">
+                            <p class="font-bold">RM 38.72</p>
+                            <p class="line-through text-gray-400">RM 88.00</p>
+                            <p class="font-bold text-red-400">(44%)</p>
+                        </div>
+                        <div class="flex flex-row items-center space-x-4">
+                            <p class="border border-gray-400 rounded px-2">Navy/L</p>
+                            <p>1 <span class="text-gray-400">(quantity)</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center space-x-2">
+                    <div class="bg-gray-400 w-20 h-20"></div>
+                    <div class="flex flex-col">
+                        <p>@product.name</p>
+                        <div class="flex flex-row items-center space-x-2">
+                            <p class="font-bold">RM 38.72</p>
+                            <p class="line-through text-gray-400">RM 88.00</p>
+                            <p class="font-bold text-red-400">(44%)</p>
+                        </div>
+                        <div class="flex flex-row items-center space-x-4">
+                            <p class="border border-gray-400 rounded px-2">Navy/L</p>
+                            <p>1 <span class="text-gray-400">(quantity)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row items-baseline space-x-4">
+                <h2 class="font-bold">Others</h2>
+                <a href="#" class="text-green-300 text-sm">See all</a>
+            </div>
+            <div class="flex flex-row space-x-2 items-center">
+                <div>
+                    <div class="bg-gray-400 w-10 h-10 rounded-full"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet ucoid del amor viu nasder</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
