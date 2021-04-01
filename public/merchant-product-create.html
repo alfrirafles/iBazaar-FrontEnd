@@ -139,7 +139,7 @@
                 <!-- price per unit -->
                 <div class="flex flex-row items-center">
                     <label for="price-per-unit" class="font-bold text-gray-500 w-1/5">Price per unit <span
-                            class="text-red-400">*</span></label>
+                            class="text-red-400"> *</span></label>
                     <input id="price-per-unit" type="text" name="price-per-unit" class="border border-gray-400 rounded">
                 </div>
                 <!-- minimum order -->
@@ -158,13 +158,15 @@
                 <div class="flex flex-row">
                     <div class="flex flex-col w-1/5">
                         <label for="product-status" class="text-gray-500 font-bold">Product Status</label>
-                        <small class="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec
+                        <small class="text-gray-400 text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                            Donec
                             odio.</small>
                     </div>
                     <!-- toggle button -->
+                    <!-- TODO: fix the centering of the switch -->
                     <div class="relative">
                         <!-- input -->
-                        <input id="product-status" type="checkbox" class="hidden" />
+                        <input id="product-status" type="checkbox" class="hidden"/>
                         <!-- line -->
                         <div
                                 class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"
@@ -177,15 +179,50 @@
                 </div>
                 <div class="flex flex-row">
                     <label for="quantity" class="font-bold text-gray-500 w-1/5">Stock Quantity<span
-                            class="text-red-400">*</span></label>
+                            class="text-red-400"> *</span></label>
                     <input id="quantity" type="text" name="price-per-unit" class="border border-gray-400 rounded">
                 </div>
                 <div class="flex flex-row">
                     <label for="weight" class="font-bold text-gray-500 w-1/5">Weight<span
-                            class="text-red-400">*</span></label>
-                    <div class="flex flex-row relative">
+                            class="text-red-400"> *</span></label>
+                    <div class="flex flex-row relative w-2/5">
                         <input id="weight" type="text" name="price-per-unit" class="border border-gray-400 rounded">
-                        <div class="border border-gray-400 rounded w-12 h-full absolute right-0"></div>
+                        <div class="border border-gray-400 rounded w-20 h-full absolute right-0 bg-gray-400">
+                            <select class="bg-gray-400 px-2">
+                                <option value="gram">Gram</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- TODO: shipping options -->
+            <div class="flex flex-row bg-white rounded p-4 space-y-2">
+                <label class="font-bold text-gray-500 w-1/5">Shipping<span class="text-red-400"> *</span></label>
+                <!-- shipping services options -->
+                <div class="grid grid-cols-2 gap-4 w-4/5">
+                    <!-- shipping services option -->
+                    <div class="flex flex-row border rounded space-x-2 items-center p-2">
+                        <div class="bg-gray-400 w-3 h-3"></div>
+                        <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                        <p>Service Name</p>
+                    </div>
+                    <!-- shipping services option -->
+                    <div class="flex flex-row border rounded space-x-2 items-center p-2">
+                        <div class="bg-gray-400 w-3 h-3"></div>
+                        <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                        <p>Service Name</p>
+                    </div>
+                    <!-- shipping services option -->
+                    <div class="flex flex-row border rounded space-x-2 items-center p-2">
+                        <div class="bg-gray-400 w-3 h-3"></div>
+                        <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                        <p>Service Name</p>
+                    </div>
+                    <!-- shipping services option -->
+                    <div class="flex flex-row border rounded space-x-2 items-center p-2">
+                        <div class="bg-gray-400 w-3 h-3"></div>
+                        <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                        <p>Service Name</p>
                     </div>
                 </div>
             </div>
@@ -278,5 +315,6 @@
         </div>
     </div>
 </div>
+
 </body>
 </html>
