@@ -55,9 +55,28 @@
         </div>
         <!-- middle side navigation -->
         <div class="flex flex-col w-2/4 p-4 bg-gray-100 space-y-4">
+            <!-- title -->
             <div class="flex flex-row justify-between">
                 <p class="text-2xl font-bold">My Products</p>
                 <input type="text" name="search" class="border rounded">
+            </div>
+            <!-- page main section -->
+            <div class="flex flex-col bg-white rounded p-4">
+                <div class="flex flex-row justify-between">
+                    <!-- product search field -->
+                    <div class="flex flex-row">
+                        <input type="text" name="product" class="bg-gray-300 rounded-l">
+                        <div class="bg-gray-400 rounded-r w-6"></div>
+                    </div>
+                    <!-- search and filters -->
+                    <div class="flex flex-row space-x-2">
+                        <select class="border border-gray-400 rounded w-full px-2">
+                            <option>Category</option>
+                        </select>
+                        <select class="border border-gray-400 rounded w-full px-2">
+                        </select>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- right side navigation -->
