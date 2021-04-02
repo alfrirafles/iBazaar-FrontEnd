@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Page title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;display=swap">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-tailwind.png">
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="">
+    <div class="flex flex-row space-x-1 h-screen">
+        <!-- left side navigation -->
+        <div class="flex flex-col w-1/4 p-4">
+            <!-- brand -->
+            <div class="flex flex-row space-x-2">
+                <img src="images/IbadahMain01.png" alt="" class="w-12 h-12">
+                <div class="flex flex-col">
+                    <p>iBazaar</p>
+                    <small class="text-green-400">Merchant</small>
+                </div>
+            </div>
+            <!-- menu list -->
+            <div class="flex flex-col pt-5">
+                <div class="flex flex-row p-3 rounded space-x-3 group hover:bg-green-200">
+                    <div class="bg-gray-400 group-hover:bg-white w-6 h-6 rounded-full"></div>
+                    <p>Dashboard</p>
+                </div>
+            </div>
+            <div class="flex flex-col py-1">
+                <div class="flex flex-row p-3 rounded space-x-3 bg-green-200 group hover:bg-green-200">
+                    <div class="bg-white group-hover:bg-white w-6 h-6 rounded-full"></div>
+                    <p>Products</p>
+                </div>
+            </div>
+            <div class="flex flex-col py-1">
+                <div class="flex flex-row p-3 rounded space-x-3 group hover:bg-green-200">
+                    <div class="bg-gray-400 group-hover:bg-white w-6 h-6 rounded-full"></div>
+                    <p>Live Stream</p>
+                </div>
+            </div>
+            <div class="flex flex-col py-1">
+                <div class="flex flex-row p-3 rounded space-x-3 group hover:bg-green-200">
+                    <div class="bg-gray-400 group-hover:bg-white w-6 h-6 rounded-full"></div>
+                    <p>Orders</p>
+                </div>
+                <a href="" class="px-12 py-2 hover:text-green-400">All</a>
+                <a href="" class="px-12 py-2 font-bold">New Orders</a>
+                <a href="" class="px-12 py-2 hover:text-green-400">Product List</a>
+                <a href="" class="px-12 py-2 hover:text-green-400">Requires Shipping</a>
+                <a href="" class="px-12 py-2 hover:text-green-400">Delivering</a>
+                <a href="" class="px-12 py-2 hover:text-green-400">Completed</a>
+                <a href="" class="px-12 py-2 hover:text-green-400">Cancelled</a>
+            </div>
+        </div>
+        <!-- middle side navigation -->
+        <div class="flex flex-col w-2/4 p-4 bg-gray-100 space-y-4">
+            <!-- title -->
+            <div class="flex flex-row justify-between">
+                <p class="text-2xl font-bold">New Orders</p>
+                <input type="text" name="search" class="border rounded">
+            </div>
+            <!-- page main section -->
+            <div class="flex flex-col bg-white rounded p-4">
+                <div class="flex flex-row justify-between p-2">
+                    <!-- order search field -->
+                    <div class="flex flex-row">
+                        <input type="text" name="product" class="bg-gray-300 rounded-l">
+                        <div class="bg-gray-400 rounded-r w-6"></div>
+                    </div>
+                    <!-- search and filters -->
+                    <div class="flex flex-row space-x-2">
+                        <select class="border border-gray-400 rounded px-2">
+                            <option>Category</option>
+                        </select>
+                        <select class="border border-gray-400 rounded px-2">
+                        </select>
+                    </div>
+                </div>
+                <table class="table-fixed my-2">
+                    <thead>
+                    <tr class="border-b-2 border-t-2 border-gray-400">
+                        <th class="w-4/12 p-2">Product</th>
+                        <th class="w-1/12 p-2">Qty.</th>
+                        <th class="w-1/12 p-2">Variant</th>
+                        <th class="w-3/12 p-2">Shipping</th>
+                        <th class="w-3/12 p-2">Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <!-- product -->
+                        <td>
+                            <div class="flex flex-row p-2 space-x-2 items-center">
+                                <div class="bg-gray-400 w-16 h-16"></div>
+                                <div class="flex flex-col">
+                                    <p>@product.name</p>
+                                    <div class="flex flex-row space-x-1">
+                                        <p class="line-through">RM 88.00</p>
+                                        <p class="font-bold text-red-400">(44%)</p>
+                                    </div>
+                                    <p class="font-bold">RM 38.72</p>
+                                </div>
+                            </div>
+                        </td>
+                        <!-- quantity -->
+                        <td>
+                            <p class="font-bold text-center">1</p>
+                        </td>
+                        <td>
+                            <div class="flex justify-center p-2">
+                                <p class="border border-gray-400 rounded px-1 py-1">Navy/L</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="flex flex-col">
+                                <p class="font-bold">Shipping Method</p>
+                                <p class="text-gray-400 text-sm">Service Type</p>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Status -->
+                            <!-- toggle button -->
+                            <div class="flex flex-row space-x-2 justify-center">
+                                <div class="relative">
+                                    <!-- input -->
+                                    <input id="order-status-1" type="checkbox" class="hidden"/>
+                                    <!-- line -->
+                                    <div
+                                            class="toggle__line w-10 h-4 mt-1 bg-gray-400 rounded-full shadow-inner"
+                                    ></div>
+                                    <!-- dot -->
+                                    <div
+                                            class="-top-1 -left-1 transition-all duration-300 ease-in-out absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
+                                    ></div>
+                                </div>
+                                <label for="order-status-2">Not Ready</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!-- product -->
+                        <td>
+                            <div class="flex flex-row p-2 space-x-2 items-center">
+                                <div class="bg-gray-400 w-16 h-16"></div>
+                                <div class="flex flex-col">
+                                    <p>@product.name</p>
+                                    <div class="flex flex-row space-x-1">
+                                        <p class="line-through">RM 88.00</p>
+                                        <p class="font-bold text-red-400">(44%)</p>
+                                    </div>
+                                    <p class="font-bold">RM 38.72</p>
+                                </div>
+                            </div>
+                        </td>
+                        <!-- quantity -->
+                        <td>
+                            <p class="font-bold text-center">1</p>
+                        </td>
+                        <!-- variant -->
+                        <td>
+                            <div class="flex justify-center p-2">
+                                <p class="border border-gray-400 rounded px-1 py-1">Navy/L</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="flex flex-col">
+                                <p class="font-bold">Shipping Method</p>
+                                <p class="text-gray-400 text-sm">Service Type</p>
+                            </div>
+                        </td>
+                        <td>
+                            <!-- Status -->
+                            <!-- toggle button -->
+                            <div class="flex flex-row space-x-2 justify-center">
+                                <div class="relative">
+                                    <!-- input -->
+                                    <input id="order-status-2" type="checkbox" class="hidden"/>
+                                    <!-- line -->
+                                    <div
+                                            class="toggle__line w-10 h-4 mt-1 bg-gray-400 rounded-full shadow-inner"
+                                    ></div>
+                                    <!-- dot -->
+                                    <div
+                                            class="-top-1 -left-1 transition-all duration-300 ease-in-out absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"
+                                    ></div>
+                                </div>
+                                <label for="order-status-2">Not Ready</label>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- right side navigation -->
+        <div class="flex flex-col w-1/4 p-4 space-y-4">
+            <div class="flex flex-row justify-between items-center">
+                <div class="flex flex-row items-center space-x-2">
+                    <div class="bg-gray-400 rounded-full h-6 p-6"></div>
+                    <p>@store.name</p>
+                </div>
+                <div class="bg-gray-400 rounded h-6 w-6"></div>
+            </div>
+            <!-- mode switch -->
+            <div class="flex flex-row">
+                <button class="w-1/2 bg-green-400 text-white rounded-l p-3">Notifications (23)</button>
+                <button class="w-1/2 bg-green-200 text-white rounded-r p-3">Chats (23)</button>
+            </div>
+            <!-- order notification section title -->
+            <div class="flex flex-row items-baseline space-x-4">
+                <p class="font-bold">Orders</p>
+                <a href="#" class="text-green-300 text-sm">See all</a>
+            </div>
+            <!-- order notification list -->
+            <div class="flex flex-row justify-around space-x-2 pb-2 border-b border-gray-300">
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+                <div class="flex flex-col items-center space-y-1">
+                    <div class="bg-gray-400 w-12 h-12 rounded-full"></div>
+                    <small>New Order</small>
+                </div>
+            </div>
+            <!-- order details -->
+            <div class="flex flex-col pb-4 border-b border-gray-400 space-y-4">
+                <!-- product -->
+                <div class="flex flex-row items-center space-x-2">
+                    <div class="bg-gray-400 w-20 h-20"></div>
+                    <div class="flex flex-col">
+                        <p>@product.name</p>
+                        <div class="flex flex-row items-center space-x-2">
+                            <p class="font-bold">RM 38.72</p>
+                            <p class="line-through text-gray-400">RM 88.00</p>
+                            <p class="font-bold text-red-400">(44%)</p>
+                        </div>
+                        <div class="flex flex-row items-center space-x-4">
+                            <p class="border border-gray-400 rounded px-2">Navy/L</p>
+                            <p>1 <span class="text-gray-400">(quantity)</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row items-center space-x-2">
+                    <div class="bg-gray-400 w-20 h-20"></div>
+                    <div class="flex flex-col">
+                        <p>@product.name</p>
+                        <div class="flex flex-row items-center space-x-2">
+                            <p class="font-bold">RM 38.72</p>
+                            <p class="line-through text-gray-400">RM 88.00</p>
+                            <p class="font-bold text-red-400">(44%)</p>
+                        </div>
+                        <div class="flex flex-row items-center space-x-4">
+                            <p class="border border-gray-400 rounded px-2">Navy/L</p>
+                            <p>1 <span class="text-gray-400">(quantity)</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row items-baseline space-x-4">
+                <h2 class="font-bold">Others</h2>
+                <a href="#" class="text-green-300 text-sm">See all</a>
+            </div>
+            <div class="flex flex-row space-x-2 items-center">
+                <div>
+                    <div class="bg-gray-400 w-10 h-10 rounded-full"></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet ucoid del amor viu nasder</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
